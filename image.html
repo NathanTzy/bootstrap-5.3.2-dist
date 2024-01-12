@@ -6,14 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .banner {
+            height: 100vh;
+            background-image: linear-gradient(rgba(248, 248, 248, 0.5), rgba(255, 191, 0, 0.736)), url(img/logo.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .banner-content {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 
 <body class="bg-warning">
     <!-- NAVBARZZZ -->
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="rounded" src="img/logo.jpg" width="80px" alt="">
+                <img class="rounded-4" src="img/logo.jpg" width="80px" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -21,7 +38,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -29,7 +46,7 @@
                         <a class="nav-link" href="#">Link</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex mx-4" role="search">
                     <input class="form-control me-2 text-warning shadow border-warning" type="search"
                         placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-secondary" type="submit">Search</button>
@@ -38,7 +55,16 @@
         </div>
     </nav>
     <!-- END NAVBARZZZ -->
-
+    <div class="container-fluid gx-0">
+        <div class="banner">
+            <div class="banner-content text-center">
+                <h1>Welcome Kingdom</h1>
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam est cum rem voluptatum esse,
+                    repellendus inventore sapiente? Quaerat quisquam officia dicta? Reprehenderit rem quo quisquam
+                    accusamus eos maiores ducimus similique!</h6>
+            </div>
+        </div>
+    </div>
     <!-- CARROUZELLL-->
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
@@ -78,7 +104,9 @@
     <!-- CONTAINER -->
     <div class="container">
         <h1 class="text-center mt-5 ">MAIN ROSTER</h1>
-        <div class="container mt-3">
+        <p class="text-center d-sm-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            incidunt dignissimos libero.</p>
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-2 text-center">
                     <div class="card">
@@ -182,6 +210,32 @@
     </div>
     <!-- END CONTAINER -->
 
+    <div class="container mt-5">
+        <h1 class="text-center bg-secondary p-4 text-light rounded-5">RRQ HOSHI</h1>
+        <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ratione.
+        </p>
+
+        <div class="row align-items-center mt-5 bg-secondary p-3 shadow-lg rounded">
+            <div class="col-md-6"><img src="img/logo.jpg" alt="" class="w-100 rounded-4 shadow-lg"></div>
+            <div class="col-md-6">
+                <h3 class="text-center text-light">Detail Team</h3>
+                <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex
+                    cupiditate excepturi veritatis quidem
+                    id, provident ipsa nulla rem natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                    possimus. Voluptate cum deleniti, velit ducimus eveniet architecto quaerat pariatur numquam aliquam
+                    nobis doloremque veniam voluptas quod sequi odit ipsam. Autem cum officia repudiandae enim
+                    perspiciatis porro? Optio rerum, aspernatur, dolore explicabo aliquam officiis, possimus minima eos
+                    incidunt dolorum veniam numquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta,
+                    debitis.</p>
+                <p class="text-center text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    minima blanditiis consectetur ab
+                    sapiente illo architecto. Deserunt ipsam nostrum culpa consectetur ad ducimus consequatur, velit
+                    impedit sapiente labore maiores ut exercitationem nulla vitae? Commodi quod doloribus consectetur
+                    quia veritatis maiores ad enim, reprehenderit velit quae accusamus rerum sed doloremque cumque odit
+                    necessitatibus, explicabo odio vero molestias tempore omnis autem excepturi! Sint iure ut</p>
+            </div>
+        </div>
+    </div>
     <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 
